@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <title>3D-Cull</title>
+    <link rel="stylesheet" href="cull.css">
+   <!-- font1  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<body>
+    <div class="container">
+        <div class="item">
+            <br> <br>
+          <h1>3D CULL</h1>
+          
+          <br>
+          <br>
+        </div>
+        <div class="item1">
+          <br>
+          
+          <i class="bi bi-caret-right-fill"></i>&nbsp;&nbsp;&nbsp;Culling is the process in 3D-rendering that removes any piece of the output object that
+          does not contribute to the &nbsp;&nbsp;&nbsp;&nbsp;final image.
+          <br>
+          <br>
+          <i class="bi bi-caret-right-fill"></i>&nbsp;&nbsp;&nbsp;Culling checks the faces that are front facing towards the viewer and renders those faces
+          and discards the remaining &nbsp;&nbsp;&nbsp;faces off the object.
+          <br>
+          <br>
+          <i class="bi bi-caret-right-fill"></i>&nbsp;&nbsp;&nbsp;There are various methods for culling such as frustum culling, cell-based occlusion culling,
+          etc. But we are using &nbsp;&nbsp;&nbsp;back-face culling because it reduces the amount of rendering it has to
+          do for showing the visible planes of a 3D object.
+          <br>
+          <br>
+          <i class="bi bi-caret-right-fill"></i>&nbsp;&nbsp;&nbsp;In order to implement back-face culling,
+          we calculate the dot product of the surface normal and the camera-to- &nbsp;&nbsp;&nbsp;triangle vector.
+          <br>
+          <br>
+          <i class="bi bi-caret-right-fill"></i>&nbsp;&nbsp;&nbsp;If the dot product is greater than or equal to zero, the respective polygon or triangle is to be
+          discarded
+          where P is the &nbsp;&nbsp;&nbsp;view point, V0 is the first vertex of a triangle and N is its normal,
+          defined as a cross product of two vectors representing &nbsp;&nbsp;&nbsp;sides of the triangle adjacent to V0.
+          <br>
+          <br>
+          <i class="bi bi-caret-right-fill"></i>&nbsp;&nbsp;&nbsp;Since the cross product is non-commutative, defining the normal in terms of cross product
+allows to specify normal &nbsp;&nbsp;&nbsp;direction relative to triangle surface using vertex order.
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;If points are already in view space, P can be assumed to be (0, 0, 0), the origin.
+            <br>
+            <br>
+          <img class="pic" src="cull.png" alt="cull">
+          <br>
+          <br>
+          
+          <video class="video" width="800" height="400" controls>
+            <source src="3d cull.mp4" type="video/mp4">
+          </video>
+
+          
+        </div>
+
+      </div>
+      
+</body>
+
+</head>
+</html>

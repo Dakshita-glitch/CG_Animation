@@ -1,0 +1,108 @@
+*
+{
+    background-color: #FFF5E4;
+    font-family:'Libre Baskerville', serif;
+    margin: 0px;
+    padding: 0px;
+}
+.heading
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #9b2928;
+    font-size: 22px;
+}
+.heading1
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #4C0027;
+    font-size: 20px;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px #9b2928;
+    
+}
+.item
+{
+    flex-basis: 23%;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px 3px lightgrey;
+    text-align: center;
+   padding: 20px 0px;
+   background-color: white;
+}
+.item h4
+{
+    padding:10px 0px;
+    background-color: white;
+}
+.item p
+{
+font-size: 15px;
+padding: 25px;
+background-color: white;
+}
+.head
+{
+    color: #9b2928;
+    font-size: 25px;
+}
+.item button
+{
+    background: #9b2928;
+    padding: 10px 25px;
+    border:none;
+    color: white;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.item button:hover{
+    background-color:  #4C0027;
+    color: white;
+}
+.item1
+{
+    flex-basis: 80%;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px 3px lightgrey;
+    text-align: center;
+   padding: 20px 0px;
+   background-color: white;
+}
+.item1 p{
+    background-color: white;
+}
+.text
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 767px)
+{
+    .container{
+        width:100%;
+        flex-direction: column;
+    }
+    .item{
+        margin:10px;
+    }
+    .item1{
+        margin:10px;
+    }
+}
